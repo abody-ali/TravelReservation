@@ -1,0 +1,315 @@
+
+html { background: #010000 url(../images/bg2.jpg) repeat-x; }
+body {
+	font: 11px/200% 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+	color: #5E5E5E;
+	margin: 0px; 	padding: 0px; 
+	background:  url(../images/image_.jpg) no-repeat right top;
+	text-align: left;
+}
+aside {
+	width: 100%;
+	background-color: rgb(4, 51, 53);
+	grid-column: 1 /11;
+	height: 50px;
+}
+
+aside::before {
+	background-image: linear-gradient(rgb(179, 95, 95), rgb(59, 88, 112), rgb(44, 138, 114), rgb(127, 45, 182), rgb(185, 173, 106), rgb(95, 141, 89));
+	width: 10px;
+}
+
+aside div {
+	top: 0%;
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-row: 3;
+	justify-content: space-between;
+}
+
+aside .aaa {
+	color: white;
+	/* top: 0%; */
+	width: 70%;
+	height: 100%;
+	/* padding: 0 20px 0 50px; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-row: 3;
+	justify-content: space-between;
+}
+
+.adduserimage {
+	border-radius: 20px;
+	transition: all 0.5s ease 0s;
+	filter: grayscale(100%);
+	width: 40px;
+	height: 40px;
+}
+
+.adduserimage:hover {
+	filter: grayscale(0);
+}
+
+aside div ul {
+	margin: 0%;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	align-content: space-between;
+	flex-direction: row-reverse;
+}
+
+aside li {
+	/* display: grid; */
+	padding: 1%;
+	border: 20px;
+	margin: 5px;
+	border-radius: 8px;
+	background-color: rgb(10 78 40);
+	width: 100px;
+	height: 25px;
+	text-align: center;
+}
+
+aside div ul li:hover {
+	content: "";
+	background-color: rgb(117, 129, 11);
+	color: #ace9e9;
+	font-size: 16px;
+	height: none;
+	border-radius: 5px;
+	animation-play-state: running;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+}
+/* Links */
+a, a:visited {
+	text-decoration: none;
+	color: #BEBEBE;	
+}
+a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #438800;
+}
+/*هنا خصائص الصور التي في الفحات*/
+#mov1 img{
+	color:white;
+	right:-5%;
+	top:10%;
+	
+	margin: 0;
+	padding: 12px 80px;
+	position:absolute;
+	text-align:center;
+	}
+	
+	#mov2 img{
+	color:white;
+	right:-5%;
+	top:10%;
+	
+	margin: 0;
+	padding: 12px 80px;
+	position:absolute;
+	text-align:center;
+	}
+	
+	.reservation background_content{
+		
+		background-color:rad;
+		}
+
+	
+	/*هنا خصائص الجدول*/
+#tab table{
+	width:50%;/*خاصيه حجم الجدول*/
+	text-align:center;/*خاصيه اتجاه*النص في الجدول**/
+	border-collapse:collapse;
+	font-size:2em;
+	border:1px solid #98bf21;/*خاصيه اطار الجدول*/
+	direction:rtl;/*خاصيه اتجاه القرلءه*/
+	color:#ffffff;
+	;
+}
+#tab th{
+	background-color:blue;
+	font-size:1.3em;
+	border:1px solid #98bf21;
+	text-align:center;
+}
+#tab td{
+
+	font-size:1.0em;
+	border:1px solid #98bf21;
+	text-align:center;
+}
+#mark {
+	color:white;
+	right:50%;
+	top:70%;
+	font-size:25px;
+	margin: 0;
+	padding: 30px 100px;
+	position:absolute;/*هذه الخاصيه لتحيد حجم العنصر*/
+	text-align:center;
+	background-color:pink;
+	
+}
+
+
+
+/* headers */
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', Helvetica, Tahoma, Arial, Sans-serif;
+	color: #FAFAFA;
+}
+h1 {
+	font-size: 3.1em;	
+	letter-spacing: -2px;
+	padding: 15px 10px 5px 10px;	
+}
+h2 {
+	font-size: 2em;
+	color: #895F30;
+	padding: 20px 10px 5px 10px;	
+}
+h3 {
+	font-size: 1.7em;	
+	font-weight: normal;
+	padding: 20px 10px 5px 10px;		
+}
+
+#wrap {
+	width: 950px;	
+	margin: 0 auto;
+	text-align: left;		
+}
+/*التحكم بعنصر الجحز الغا الحجز و...*/
+#header {
+	position: relative;
+	width: 950px;	
+	height: 370px;	
+	margin: 0; padding: 0;
+	letter-spacing:1px;
+}
+/*هنا تتحكم بتفاصيل عنصر البراق*/
+#header h1#logo-text a {
+	position: absolute;
+	margin: 10; padding: 0;
+	font: bold 70px ;
+	font-size:  100px ;
+	letter-spacing: -1.5px;
+	color: #F8F8F8;
+	text-decoration: none;
+	text-transform: none;
+		letter-spacing:5px;
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 125px; left: 25px;	
+}
+/*هنا تتحكم بالعنصر الجماة تحت البراق*/
+#header p#intro {
+	position: absolute;
+	margin: 10px; padding: 0;
+	font-family: 'Trebuchet MS', Tahoma, Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	font-style: normal;
+	text-transform: none;
+	color: #F8F8F8;
+	width: 500px;
+	top: 205px; left: 30px;		
+}
+
+/*  Navigation  */
+#nav {
+	display: flex;
+	position: absolute;
+	margin: 0; padding: 0;
+	height: 50px;
+	/* left: 100px; */
+	top: 80px;
+}
+#nav ul {
+	float: left;
+	list-style: none;
+	height: 50px;
+	margin: 0 0 0 5px; padding: 0;	
+	display: flex;
+}
+
+#nav ul li a {
+	float: left;
+	margin: 0;	padding: 0 12px;
+	font: bold 15px/50px 'Trebuchet MS', Helvetica, Arial, Geneva, sans-serif;
+	text-decoration: none;	
+	color: #c95723;	
+	text-transform: uppercase;
+}
+
+
+/* Main Column */
+#main {
+	float: left;
+	width: 565px;
+	padding: 0; margin: 0 0 0 10px;
+	display: inline;		
+}
+/*هنا لوصف خصائص عنصر عنا*/
+#main h2 {
+	padding: 5px 12px;
+	margin: 15px 5px 10px 5px;
+	font: bold 3em 'Trebuchet MS', Helvetica, Arial, sans-serif;			
+	color: #45D5E6;
+	letter-spacing:5px;
+	float:center;
+	border-bottom: 1px solid #121212; 
+	background-image: url(../images/pattern.gif);
+}
+#db h1  {
+	color: #45D5E6;
+	padding: 40px 500px;
+	letter-spacing:5px;
+	float:center;
+	
+}
+
+#db form  {
+	color: #45D5E6;
+	padding: 0px 400px;
+	
+	float:left;
+}
+#db input {
+	padding:15px 30px;
+	border:1px solid #98bf21;
+	color: black;
+	font-size:15px;
+	
+	background-color:silver;
+}
+
+
+/* postmeta */
+
+
+
